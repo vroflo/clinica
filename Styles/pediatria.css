@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.oyt-menu {
+    width: 100%;
+    height: 70px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(12 11 10);
+    color: white;
+    padding: 5px 10px 5px 10px ;
+}
+.oyt-logo-clinica {
+    padding: 5px;
+    width: 20%;
+}
+.oyt-menu li a {
+    color: white;
+}
+.oyt-menu-lista-principal {
+    display: flex;
+    align-items: center;
+}
+.oyt-menu-lista-principal li {
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.oyt-menu-lista-principal li:hover {
+    background-color: rgb(70, 67, 67);
+}
+.oyt-menu-servicios {
+    position: relative;
+}
+.oyt-menu-lista-servicios {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    font-size: 11px;
+}
+.oyt-menu-lista-servicios li {
+    width: 190px;
+    transform: translate(-20px);
+    background-color: rgb(12 11 10);
+    text-align: center;
+}
+.oyt-menu-lista-servicios li:hover {
+    background-color: rgb(70, 67, 67);
+}
+.oyt-menu-servicios:hover .oyt-menu-lista-servicios {
+    display: block;
+}
+/*------------------------------------*/
+header{
+    background-color: #222;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    padding-left: 2vw;
+}
+
+.cont-ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    background-color:#24252a;
+    padding: 1.5vw;
+    transition:  all .3s ease 0s;
+}
+
+li:hover {
+    background-color: #1d3b87;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: #24252a;
+}
+
+.ul-second > li:hover {
+    background-color: #7dc3c6;
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+/*--------------------*/
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: medium;
+}
+
+.doc{
+    padding: 10px;
+    width: 230px;
+    height: 150px;
+}
+.contenedor{
+    width: 90%;
+    line-height: 1.5;
+    margin: 10px auto;
+    text-align: center;  
+    font-style: oblique;
+}
+.servicio {
+    line-height: 1.5;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.card {
+    width: auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_perfil {
+    width: 320px;
+}
+.card img {
+    width: 225px ;
+    height: 170px;
+    border-radius: 50px;
+}
+.card_nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/*------ pie de pagina--------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    background-color: #121110;
+    color: #dfd8d8;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+}
+
+.f-logo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.f-logo img {
+    width: 60px;
+}
+
+.f-logo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-info ul {
+    padding-left: 8px;
+    margin-top: 30px;
+}
+
+.f-info ul a {
+    color: #dfd8d8;
+}
+
+.f-info ul a li i {
+    margin-right: 10px;
+}
+
+.f-social ul {
+    display: flex;
+}
+
+.f-social ul a {
+    margin-right: 10px;
+}
+/* ----------------------------*/
+
+@media (min-width: 768px) {
+    .oyt-logo-clinica {
+        padding: 5px;
+        width: 10%;
+    }
+ 
+    .doc{
+        padding: 15px;
+        width: 630px;
+        height: 520px;
+    }
+    .card_perfil {
+        width: 768px;
+    }
+    h2 {
+        text-align: center;
+        padding: 15px;
+       font-size: xx-large;
+    }
+}
+@media (min-width: 1024px) {
+    .oyt-logo-clinica {
+        padding: 5px;
+        width: 10%;
+    }
+    .doc{
+        padding: 15px;
+        width: 820px;
+        height: 520px;
+    }
+    .card h2 {
+        text-align: center;
+        padding: 55px;
+    }
+    .card_perfil {
+        width: 1020px;
+    }
+    .card img {
+        width: 425px ;
+        height: 320px;
+    }
+    .card_nombre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+}
