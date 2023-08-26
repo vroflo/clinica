@@ -518,7 +518,7 @@ main{
 /*main index*/
 
 main .banner-home {
-    background-image: url(../Assets/banner-salud2.jpg);
+    background-image: url(/Assets/banner-salud2.jpg);
     background-position: center;
     background-size: cover;
     height: 270px;
